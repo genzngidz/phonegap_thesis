@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>
+        </title>
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+        <link rel="stylesheet" href="my.css" />
+        <style>
+            /* App custom styles */
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
+        </script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.1.1/jquery.mobile-1.1.1.min.js">
+        </script>
+        <script src="my.js">
+        </script>
+    </head>
+    <body>
+        <!-- Home -->
+        <div data-role="page" id="page1">
+            <div data-theme="b" data-role="header">
+                <h3>
+                    Microscopic Analysis
+                </h3>
+                <div data-role="navbar" data-iconpos="top">
+                      <ul>
+                        <li>
+                            <a href="bacteria.html" data-theme="" data-icon="">
+								<img src="images/menu/bacteria.png" /><br/>
+                                Bacteria
+                            </a>
+                        </li>
+                        <li>
+                            <a href="specimen.html" data-theme="" data-icon="">
+								<img src="images/menu/specimen.png" /><br/>
+                                Specimen
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mixtures.html" data-theme="" data-icon="">
+								<img src="images/menu/mixtures.png" /><br/>
+                                Mixture
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <h2>
+                    Stool
+                </h2>
+            </div>
+            <div data-role="content">
+			
+				<div class="content-primary">	
+					<ul data-role="listview" data-filter="true" data-filter-placeholder="Search Stool...">
+						<li><a href="specimen_stool_main.html">
+								<img src="images/specimen/Stool/Stool.jpg" />
+								<h3>Stool</h3>						
+								<p>
+								The solid waste that is left after food is digested. <br/>
+								Stool forms in the intestines and passes out of the body through the anus. <br/>
+								There are 3 types of stool: <br/>
+								1. lienteric stool feces <br/>
+								2. rice-water <br/>
+								3. silver stool feces <br/>
+								</p>
+								 
+							</a>
+						</li>
+						<li><a href="rice_water.html">
+								<img src="images/specimen/Stool/Rice-water.jpg" />
+								<h3>Rice-water</h3>
+								<p>
+								A semisynthetic antibiotic C43H58N4O12 that <br/>
+								is used especially in the treatment of tuberculosis <br/>
+								and to treat asymptomatic carriers of meningococci.
+
+								</p>
+							</a>
+						</li>
+						<li><a href="Lienteric Stool.html">
+								<img src="images/specimen/Stool/Lienteric stool.jpg" />
+								<h3>Lienteric stool </h3>
+								<p>
+								A chemical which, when excreted into the urine, <br/>
+								has a local analgesic effect. It is often used to <br/>
+								alleviate the pain, irritation, discomfort, or urgency <br/>
+								caused by urinary tract infections, surgery, <br/>
+								or injury to the urinary tract.<br/>
+								</p>
+							</a>
+						</li>
+						</li>
+					</ul>
+					<br/>
+					
+					
+				</div><!--/content-primary -->
+					<a href="specimen.html" data-role="button">Back</a>
+            </div>
+            <div data-theme="b" data-role="footer" data-position="fixed">
+                <h1>
+                    ©copyright 2012-2013
+                </h1>
+            </div>
+        </div>
+          <script type="text/javascript" src="cordova-2.2.0.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+</html>

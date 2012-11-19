@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+       <meta name="format-detection" content="telephone=no" />
+       <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        
+        <title>
+        </title>
+        <link rel="stylesheet" href="jquery.mobile-1.1.1.min.css" />
+        <link rel="stylesheet" href="my.css" />
+        <style>
+            /* App custom styles */
+        </style>
+        <script src="jquery.min.js"></script>
+        <script src="jquery.mobile-1.1.1.min.js"></script>
+        <script src="my.js"></script>
+    </head>
+
+    <body>
+        <!-- Home -->
+        <div data-role="page" id="page1">
+            <div data-theme="b" data-role="header">
+                <h3>
+                    Microscopic Analysis
+                </h3>
+                <div data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li>
+                            <a data-transition="fade" href="bacteria.html" data-theme="" data-icon="">
+								<img src="images/menu/bacteria.png" /><br/>
+                                Bacteria
+                            </a>
+                        </li>
+                        <li>
+                            <a data-transition="fade" href="specimen.html" data-theme="" data-icon="">
+								<img src="images/menu/specimen.png" /><br/>
+                                Specimen
+                            </a>
+                        </li>
+                        <li>
+                            <a data-transition="fade" href="mixture.html" data-theme="" data-icon="">
+								<img src="images/menu/mixtures.png" /><br/>
+                                Mixture
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <h2>
+                   Stool
+                </h2>
+            </div>
+            <div data-role="content">
+			
+				<div class="content-primary">	
+					<h2>Rice-Water</h2>
+					<p>
+						<strong>Did you know that...</strong>
+						<br/> <br>
+						Clear, watery stool with a vaguely fishy odour, containing flecks of mucus, likened to water from boiled rice, an appearance classically seen in cholera; cholera stool is low in protein and isotonic with the plasma, and thus a 'secretory' diarrhoea in which adenylate cyclase is locked in an 'on' position by enterotoxins produced by Vibrio cholerae and some strains of E coli; at early postmortem examination, the intestines are stiff and non-distensible and likened to iron rods, a finding due to the antemortem metabolic acidosis and decreased K+.
+						<br>
+					</p>
+					<br>
+					<img src="images/specimen/Stool/Rice-water.jpg" style="width:400px"/>
+					<br/>
+					<h2>Additional Information</h2>
+					<div class="ui-body ui-body-c ui-corner-all">
+			
+						<div data-role="collapsible-set" data-theme="b" data-content-theme="d">
+							
+							<div data-role="collapsible" data-theme="b" data-content-theme="c">
+								<br><img src="images/specimen/Stool/rice_water2.jpg" style="width:300px" /> </br>
+								<h3>Rice-Water</h3>						
+										<p>
+										
+										<br>A watery stool containing white flecks of mucus, epithelial cells, and bacteria and discharged from the bowels in severe forms of diarrhea</br>
+										<br>
+										</p>
+							</div>
+							
+						
+					</div><!--END UI BODY ---->
+					<br/>
+					
+					
+					
+				</div><!--/content-primary -->
+				
+            </div>
+            <div data-theme="b" data-role="footer" data-position="fixed">
+                <h1>
+                    ©copyright 2012-2013
+                </h1>
+            </div>
+        </div>
+        <script type="text/javascript" src="cordova-2.2.0.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+</html>

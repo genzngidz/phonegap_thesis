@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>
+        </title>
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+        <link rel="stylesheet" href="my.css" />
+        <style>
+            /* App custom styles */
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
+        </script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.1.1/jquery.mobile-1.1.1.min.js">
+        </script>
+        <script src="my.js">
+        </script>
+    </head>
+    <body>
+        <!-- Home -->
+        <div data-role="page" id="page1">
+            <div data-theme="b" data-role="header">
+                <h3>
+                    Microscopic Analysis
+                </h3>
+                <div data-role="navbar" data-iconpos="top">
+                     <ul>
+                        <li>
+                            <a href="bacteria.html" data-theme="" data-icon="">
+								<img src="images/menu/bacteria.png" /><br/>
+                                Bacteria
+                            </a>
+                        </li>
+                        <li>
+                            <a href="specimen.html" data-theme="" data-icon="">
+								<img src="images/menu/specimen.png" /><br/>
+                                Specimen
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mixtures.html" data-theme="" data-icon="">
+								<img src="images/menu/mixtures.png" /><br/>
+                                Mixture
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <h2>
+                    Blood
+                </h2>
+            </div>
+            <div data-role="content">
+			
+				<div class="content-primary">	
+					<ul data-role="listview" data-filter="true" data-filter-placeholder="Search Blood Cells...">
+						<li><a href="blood cells.html">
+								<img src="images/specimen/blood/bloodcells.jpg" />
+								<h3>Blood Cells </h3>						
+								<p>
+								There are 3 blood cell types: <br/>
+								Red blood cells (erythrocytes) <br/>
+								White blood cells (Leukocytes) <br/>
+								Platelets (thrombocytes).
+								</p>
+								 
+							</a>
+						</li>
+						<li><a href="red blood cells.html">
+								<img src="images/specimen/Blood/rbc.jpg" />
+								<h3>Red Blood Cells (Erythrocytes) </h3>
+								<p>
+								Red blood cells primarily carry oxygen from the lungs to the cells <br/>
+								of tissues and organs all around the body. In mammals, red blood cells <br/>
+								contain haemoglobin, which is rich in iron, and gives blood it’s red colour.
+								</p>
+							</a>
+						</li>
+						<li><a href="white blood cells.html">
+								<img src="images/specimen/Blood/wbc.jpg" />
+								<h3>White Blood Cells (Leukocytes) </h3>
+								<p>
+								White blood cells are active in defending the host from <br/>
+								infections and other foreign bodies in the blood and tissues.
+								</p>
+							</a>
+						</li>
+						<li><a href="platelet.html">
+								<img src="images/specimen/Blood/platelets.jpg" />
+								<h3>Platelets</h3>
+								<p>
+								Platelets are cell fragments produced from megakaryocytes. <br/>
+								These polyploid (128n) cells in the bone marrow send <br/>
+								pseudopodia-like projections into the lumen of adjacent <br/>
+								blood vessels. Blood flowing through the vessel shears <br/>
+								off the platelets.
+								</p>
+							</a>
+						</li>
+						<li><a href="plasma.html">
+								<img src="images/specimen/Blood/plasma.jpg" />
+								<h3>Plasma </h3>
+								<p>
+								Plasma is a yellowish liquid that is mostly water. <br/>
+								But it also carries important nutrients, hormones <br/>
+								and proteins throughout the body. 
+								</p>
+							</a>
+						</li>
+					</ul>
+					<br/>
+					
+					<a href="specimen_menu.html" data-role="button">Back</a>
+				</div><!--/content-primary -->
+					
+            </div>
+            <div data-theme="b" data-role="footer" data-position="fixed">
+                <h1>
+                    ©copyright 2012-2013
+                </h1>
+            </div>
+        </div>
+          <script type="text/javascript" src="cordova-2.2.0.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+</html>

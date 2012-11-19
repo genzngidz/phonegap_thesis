@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+       <meta name="format-detection" content="telephone=no" />
+       <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        
+        <title>
+        </title>
+        <link rel="stylesheet" href="jquery.mobile-1.1.1.min.css" />
+        <link rel="stylesheet" href="my.css" />
+        <style>
+            /* App custom styles */
+        </style>
+        <script src="jquery.min.js"></script>
+        <script src="jquery.mobile-1.1.1.min.js"></script>
+        <script src="my.js"></script>
+    </head>
+    <body>
+        <!-- Home -->
+        <div data-role="page" id="page1">
+            <div data-theme="b" data-role="header">
+                <h3>
+                    Microscopic Analysis
+                </h3>
+                <div data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li>
+                            <a data-transition="fade" href="bacteria.html" data-theme="" data-icon="">
+								<img src="images/menu/bacteria.png" /><br/>
+                                Bacteria
+                            </a>
+                        </li>
+                        <li>
+                            <a data-transition="fade" href="specimen.html" data-theme="" data-icon="">
+								<img src="images/menu/specimen.png" /><br/>
+                                Specimen
+                            </a>
+                        </li>
+                        <li>
+                            <a data-transition="fade" href="mixture.html" data-theme="" data-icon="">
+								<img src="images/menu/mixtures.png" /><br/>
+                                Mixture
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <h2>
+                    Bacteria
+                </h2>
+            </div>
+            <div data-role="content">
+			
+				<div class="content-primary">	
+					<h2>Melanoma</h2>
+					<p>
+						<strong>Did you know that...</strong>
+						<br/> <br>
+						Melanoma  is a malignant tumor of melanocytes. Melanocytes are cells that produce the dark pigment, melanin, which is responsible for the color of skin. They predominantly occur in skin, but are also found in other parts of the body, including the bowel, oral cavity and the eye (see uveal melanoma). Melanoma can originate in any part of the body that contains melanocytes.
+					</p>
+					<br>
+					<img src="images/specimen/urine/Melanoma.jpg" style="width:400px"/>
+					<br/>
+					<h2>Additional Information</h2>
+					<div class="ui-body ui-body-c ui-corner-all">
+			
+						<div data-role="collapsible-set" data-theme="b" data-content-theme="d">
+							
+							<div data-role="collapsible" data-theme="b" data-content-theme="c">
+							<br><strong>Internal Bleeding</br></strong>
+								<br><img src="images/specimen/urine/internalbleeding.jpg" style="width:300px" /> </br>
+								<h3>Related Disease</h3>						
+										<p>
+										
+										<br>While the general public understands that internal bleeding means bleeding that can't be seen on the outside of the body, medical personnel tend to use terms that describe precisely where inside the body the bleeding is found. The internal bleeding may occur within tissues, organs, or in cavities of the body including the head, chest, and abdomen. Examples of other potential sites of bleeding include the eye, lining tissues of the heart, muscles, and joints. </br>
+										
+							</div>
+							
+						
+					</div><!--END UI BODY ---->
+					<br/>
+					
+					
+					
+				</div><!--/content-primary -->
+				
+            </div>
+            <div data-theme="b" data-role="footer" data-position="fixed">
+                <h1>
+                    ©copyright 2012-2013
+                </h1>
+            </div>
+        </div>
+        <script type="text/javascript" src="cordova-2.2.0.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+</html>

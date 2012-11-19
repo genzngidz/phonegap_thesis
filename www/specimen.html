@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+       <meta name="format-detection" content="telephone=no" />
+       <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        
+        <title>
+        </title>
+        <link rel="stylesheet" href="jquery.mobile-1.1.1.min.css" />
+        <link rel="stylesheet" href="my.css" />
+        <style>
+            /* App custom styles */
+        </style>
+        <script src="jquery.min.js"></script>
+        <script src="jquery.mobile-1.1.1.min.js"></script>
+        <script src="my.js"></script>
+    </head>
+    <body>
+        <!-- Home -->
+        <div data-role="page" id="page1">
+            <div data-theme="b" data-role="header">
+                <h3>
+                    Microscopic Analysis
+                </h3>
+                <div data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li>
+                            <a href="bacteria.html" data-theme="" data-icon="">
+								<img src="images/menu/bacteria.png" /><br/>
+                                Bacteria
+                            </a>
+                        </li>
+                        <li>
+                            <a href="specimen.html" data-theme="" data-icon="">
+								<img src="images/menu/specimen.png" /><br/>
+                                Specimen
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mixtures.html" data-theme="" data-icon="">
+								<img src="images/menu/mixtures.png" /><br/>
+                                Mixture
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <h2>
+                    Specimen
+                </h2>
+            </div>
+            <div data-role="content">
+			
+				<div class="content-primary">	
+					<ul data-role="listview" data-filter="true" data-filter-placeholder="Search Specimen...">
+						<li><a href="specimen_urine.html">
+								<img src="images/specimen/menu/urine.png" />
+								<h3>Urine</h3>						
+								<p>
+								Urine is a slightly acidic fluid which carries<br/>
+								waste from the kidneys to the outside world. <br/>
+								Urea is, among other things, a diuretic.
+								</p>
+								 
+								<span class="ui-li-count">8</span>
+							</a>
+						</li>
+						<li><a href="specimen_blood.html">
+								<img src="images/specimen/menu/blood.png" />
+								<h3>Blood</h3>
+								<p>
+								The fluid consisting of plasma, blood cells, and <br/>
+								platelets that is circulated by the heart through<br/>
+								the vertebrate vascular system, carrying oxygen and <br/>
+								nutrients to and waste materials away from all body tissues.
+								</p>
+								<span class="ui-li-count">5</span>
+							</a>
+						</li>
+						<li><a href="specimen_stool.html">
+								<img src="images/specimen/menu/stool.png" />
+								<h3>Stool</h3>
+								<p>
+								The solid waste that is left after food is <br/>
+								 digested. Stool forms in the intestines <br/>
+								and passes out of the body through the anus.
+								</p>
+								<span class="ui-li-count">3</span>
+							</a>
+						</li>
+
+					</ul>
+				</div><!--/content-primary -->
+					
+            </div>
+            <div data-theme="b" data-role="footer" data-position="fixed">
+                <h1>
+                    ©copyright 2012-2013
+                </h1>
+            </div>
+        </div>
+        <script type="text/javascript" src="cordova-2.2.0.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+</html>

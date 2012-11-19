@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+       <meta name="format-detection" content="telephone=no" />
+       <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        
+        <title>
+        </title>
+        <link rel="stylesheet" href="jquery.mobile-1.1.1.min.css" />
+        <link rel="stylesheet" href="my.css" />
+        <style>
+            /* App custom styles */
+        </style>
+        <script src="jquery.min.js"></script>
+        <script src="jquery.mobile-1.1.1.min.js"></script>
+        <script src="my.js"></script>
+    </head>
+    <body>
+        <!-- Home -->
+        <div data-role="page" id="page1">
+            <div data-theme="b" data-role="header">
+                <h3>
+                    <a href="about.html"> MicroAnalysis </a>
+                </h3>
+                <div data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li>
+                            <a data-transition="fade" href="bacteria.html" data-theme="" data-icon="">
+								<img src="images/menu/bacteria.png" /><br/>
+                                Bacteria
+                            </a>
+                        </li>
+                        <li>
+                            <a data-transition="fade" href="specimen.html" data-theme="" data-icon="">
+								<img src="images/menu/specimen.png" /><br/>
+                                Specimen
+                            </a>
+                        </li>
+                        <li>
+                            <a data-transition="fade" href="mixture.html" data-theme="" data-icon="">
+								<img src="images/menu/mixtures.png" /><br/>
+                                Mixture
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <h2>
+                    Bacteria
+                </h2>
+            </div>
+            <div data-role="content">
+			
+				<div class="content-primary">	
+					<ul data-role="listview" data-filter="true" data-filter-placeholder="Search Bacteria...">
+						<li><a data-transition="fade" href="mixture_wbc.html">
+								<img src="images/mixture/wbc.jpg" />
+								<h3>WBC Diluting Fluid</h3>						
+								<p>
+								A sample of whole blood is mixed with a weak acid solution </br>
+								that lyses non-nucleated red blood cells. Following adequate mixing, </br>
+								the specimen is introduced into a counting chamber where the white </br>
+								blood cells (leukocytes) in a diluted volume are counted.
+								</p>
+								 
+								
+							</a>
+						</li>
+						<li><a data-transition="fade" href="mixture_nss.html">
+								<img src="images/mixture/nss.jpg" />
+								<h3>Normal Saline Solution</h3>
+								<p>
+								A solution of sodium chloride in purified water.</br>
+								This can usually be found on Electrolyte Solution, such as dextrose.+</br>
+								</p>
+						
+							</a>
+						</li>
+						<li><a data-transition="fade" href="mixture_hayem.html">
+								<img src="images/mixture/hayemis.jpg" />
+								<h3>Hayem's Solution</h3>
+								<p>
+								An isotonic fluid used for diluting blood samples </br>
+								in red blood cell counts. Contains mercuric chloride, </br>
+								sodium sulfate and sodium chloride. 
+								</p>
+							
+							</a>
+						</li>
+						<li><a data-transition="fade" href="mixture_lugol.html">
+								<img src="images/mixture/lugols.jpg" />
+								<h3>Lugol's Solution</h3>
+								<p>
+								A solution of elemental iodine and potassium iodide in water<br/>
+								It is often used as an antiseptic and disinfectant, for emergency</br>
+								disinfection of drinking water, and as a reagent for starch   <br/>
+								detection in routine laboratory and medical tests.
+								</p>
+								
+							</a>
+						</li>
+						
+						<li><a data-transition="fade" href="mixture_alcohol.html">
+								<img src="images/mixture/alcohol.jpg" />
+								<h3>Alcohol</h3>
+								<p>
+								a transparent, colorless, volatile liquid, used </br>
+								as a solvent and disinfectant, and as a topical </br> 
+								antiseptic.
+								</p>
+							
+							</a>
+						</li>
+					</ul>
+				</div><!--/content-primary -->
+					
+            </div>
+            <div data-theme="b" data-role="footer" data-position="fixed">
+                <h1>
+                    ©copyright 2012-2013
+                </h1>
+            </div>
+        </div>
+        <script type="text/javascript" src="cordova-2.2.0.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+</html>

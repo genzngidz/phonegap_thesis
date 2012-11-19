@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>
+        </title>
+        <link rel="stylesheet" href="jquery.mobile-1.1.1.min.css" />
+        <link rel="stylesheet" href="my.css" />
+        <style>
+            /* App custom styles */
+        </style>
+        <script src="jquery.min.js"></script>
+        <script src="jquery.mobile-1.1.1.min.js"></script>
+        <script src="my.js"></script>
+    </head>
+    <body>
+        <!-- Home -->
+        <div data-role="page" id="page1">
+            <div data-theme="b" data-role="header">
+                <h3>
+                    <a href="about.html"> Microscopic Analysis </a>
+                </h3>
+                <div data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li>
+                            <a data-transition="slidedown" href="bacteria.html" data-theme="" data-icon="">
+								<img src="images/menu/bacteria.png" /><br/>
+                                Bacteria
+                            </a>
+                        </li>
+                        <li>
+                            <a data-transition="slidedown" href="specimen.html" data-theme="" data-icon="">
+								<img src="images/menu/specimen.png" /><br/>
+                                Specimen
+                            </a>
+                        </li>
+                        <li>
+                            <a data-transition="slidedown" href="mixture.html" data-theme="" data-icon="">
+								<img src="images/menu/mixtures.png" /><br/>
+                                Mixture
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <h2>
+                    Mixture
+                </h2>
+            </div>
+            <div data-role="content">
+			
+				<div class="content-primary">	
+					<h2>Stool + Lugols Iodine</h2>
+					<img src="images/mixture/lugol/slug.jpg" style="width:400px"/>
+					<p>
+						<strong>Details</strong>
+						<br/>
+						Gram’s Stain distinguishes between the two major classes of bacteria 
+						due to the differences in cell wall structure ; Gram-positive bacteria, 
+						remain coloured after the staining procedure, and 
+						gram-negative bacteria, which do not retain dye.
+						</br>
+						
+						In the staining technique, cells on a microscope slide are heat-fixed 
+						and stained with a basic dye, Crystal violet, which stains all 
+						bacterial cells blue. Iodide solution is then added that allows 
+						the iodine to enter the cells and form a water-insoluble complex with 
+						the crystal violet dye. The preparation is then treated with a decolourise 
+						solvent, in which the iodine-crystal violet complex is soluble.
+					</p>
+					
+					<br/>
+					
+					</br>
+					
+					<br/>
+					<br/>
+					<a href="mixture_lugol.html" data-role="button">Back</a>
+					
+					
+					
+				</div><!--/content-primary -->
+				
+            </div>
+            <div data-theme="b" data-role="footer" data-position="fixed">
+                <h1>
+                    ©copyright 2012-2013
+                </h1>
+            </div>
+        </div>
+          <script type="text/javascript" src="cordova-2.0.0.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+</html>

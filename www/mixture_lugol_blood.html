@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>
+        </title>
+        <link rel="stylesheet" href="jquery.mobile-1.1.1.min.css" />
+        <link rel="stylesheet" href="my.css" />
+        <style>
+            /* App custom styles */
+        </style>
+        <script src="jquery.min.js"></script>
+        <script src="jquery.mobile-1.1.1.min.js"></script>
+        <script src="my.js"></script>
+    </head>
+    <body>
+        <!-- Home -->
+        <div data-role="page" id="page1">
+            <div data-theme="b" data-role="header">
+                <h3>
+                    <a href="about.html"> Microscopic Analysis </a>
+                </h3>
+                <div data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li>
+                            <a data-transition="slidedown" href="bacteria.html" data-theme="" data-icon="">
+								<img src="images/menu/bacteria.png" /><br/>
+                                Bacteria
+                            </a>
+                        </li>
+                        <li>
+                            <a data-transition="slidedown" href="specimen.html" data-theme="" data-icon="">
+								<img src="images/menu/specimen.png" /><br/>
+                                Specimen
+                            </a>
+                        </li>
+                        <li>
+                            <a data-transition="slidedown" href="mixture.html" data-theme="" data-icon="">
+								<img src="images/menu/mixtures.png" /><br/>
+                                Mixture
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <h2>
+                    Mixture
+                </h2>
+            </div>
+            <div data-role="content">
+			
+				<div class="content-primary">	
+					<h2>Blood + Lugols Iodine</h2>
+					<img src="images/mixture/lugol/blug.jpg" style="width:400px"/>
+					<p>
+						<strong>Details</strong>
+						<br/>
+						It has been established practice for 60 years to prepare thyrotoxic 
+						patients undergoing thyroidectomy with Lugol's iodine. However, evidence 
+						in support of its claimed benefits, namely a reduction in the vascularity 
+						and friability of the toxic thyroid gland, is scanty. We have therefore determined 
+						the effect of Lugol's iodine on thyroid blood flow, as measured by thyroid uptake 
+						of thallium-201, in nine patients with Graves' disease and one euthyroid patient. 
+						Thallium-201 uptake, as well as serum thyroxine and triiodothyronine, fell 
+						significantly after treatment with iodine. Although not correlated with thyroid 
+						function tests, thallium-201 uptake was significantly correlated with thyroid weight. 
+						These results support the contention that thyroid blood flow is reduced in thyrotoxic 
+						patients treated with Lugol's iodine.
+					</p>
+					
+					<br/>
+					
+					</br>
+					
+					<br/>
+					<br/>
+					<a href="mixture_lugol.html" data-role="button">Back</a>
+					
+					
+					
+				</div><!--/content-primary -->
+				
+            </div>
+            <div data-theme="b" data-role="footer" data-position="fixed">
+                <h1>
+                    ©copyright 2012-2013
+                </h1>
+            </div>
+        </div>
+          <script type="text/javascript" src="cordova-2.0.0.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+</html>

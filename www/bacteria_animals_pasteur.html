@@ -5,24 +5,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>
         </title>
-        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+        <link rel="stylesheet" href="jquery.mobile-1.1.1.min.css" />
         <link rel="stylesheet" href="my.css" />
         <style>
             /* App custom styles */
         </style>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
-        </script>
-        <script src="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.1.1/jquery.mobile-1.1.1.min.js">
-        </script>
-        <script src="my.js">
-        </script>
+        <script src="jquery.min.js"></script>
+        <script src="jquery.mobile-1.1.1.min.js"></script>
+        <script src="my.js"></script>
     </head>
     <body>
         <!-- Home -->
         <div data-role="page" id="page1">
             <div data-theme="b" data-role="header">
                 <h3>
-                    MicroAnalysis
+                    <a href="about.html"> MicroAnalysis </a>
                 </h3>
                 <div data-role="navbar" data-iconpos="top">
                    <ul>
@@ -116,8 +113,10 @@ P. multocida causes disease in both wild and domesticated animals. If released i
                 </h1>
             </div>
         </div>
-        <script>
-            //App custom javascript
+       <script type="text/javascript" src="cordova-2.0.0.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
         </script>
     </body>
 </html>

@@ -5,41 +5,38 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>
         </title>
-        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+        <link rel="stylesheet" href="jquery.mobile-1.1.1.min.css" />
         <link rel="stylesheet" href="my.css" />
         <style>
             /* App custom styles */
         </style>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
-        </script>
-        <script src="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.1.1/jquery.mobile-1.1.1.min.js">
-        </script>
-        <script src="my.js">
-        </script>
+        <script src="jquery.min.js"></script>
+        <script src="jquery.mobile-1.1.1.min.js"></script>
+        <script src="my.js"></script>
     </head>
     <body>
         <!-- Home -->
         <div data-role="page" id="page1">
             <div data-theme="b" data-role="header">
                 <h3>
-                    MicroAnalysis
+                    <a href="about.html"> MicroAnalysis </a>
                 </h3>
                 <div data-role="navbar" data-iconpos="top">
-                    <ul>
+                   <ul>
                         <li>
-                            <a href="#page1" data-theme="" data-icon="">
+                            <a data-transition="slidedown" href="bacteria.html" data-theme="" data-icon="">
 								<img src="images/menu/bacteria.png" /><br/>
                                 Bacteria
                             </a>
                         </li>
                         <li>
-                            <a href="#page1" data-theme="" data-icon="">
+                            <a data-transition="slidedown" href="specimen.html" data-theme="" data-icon="">
 								<img src="images/menu/specimen.png" /><br/>
                                 Specimen
                             </a>
                         </li>
                         <li>
-                            <a href="#page1" data-theme="" data-icon="">
+                            <a data-transition="slidedown" href="mixture.html" data-theme="" data-icon="">
 								<img src="images/menu/mixtures.png" /><br/>
                                 Mixture
                             </a>
@@ -115,8 +112,10 @@
                 </h1>
             </div>
         </div>
-        <script>
-            //App custom javascript
+         <script type="text/javascript" src="cordova-2.0.0.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
         </script>
     </body>
 </html>

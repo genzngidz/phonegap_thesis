@@ -67,7 +67,7 @@
 								
 								<br/>
 								<br/>
-								<a href="javascript:void(0)" onclick="navigator.app.exitApp()" data-role="button">Exit</a>
+								<a href="javascript:void(0)" id="exit_button" data-role="button">Exit</a>
 								</p>
 							</a>
 						
@@ -80,10 +80,17 @@
                 </h1>
             </div>
         </div>
-         <script type="text/javascript" src="cordova-2.2.0.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
+        
         <script type="text/javascript">
-            app.initialize();
+            //app.initialize();
+			
+			$(document).ready(function(){
+				
+				$('#exit_button').click(function(){
+					navigator.app.exitApp();
+				});
+			
+			});
         </script>
     </body>
 </html>

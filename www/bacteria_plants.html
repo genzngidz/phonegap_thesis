@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>
+        </title>
+        <link rel="stylesheet" href="jquery.mobile-1.1.1.min.css" />
+        <link rel="stylesheet" href="my.css" />
+        <style>
+            /* App custom styles */
+        </style>
+        <script src="jquery.min.js"></script>
+        <script src="jquery.mobile-1.1.1.min.js"></script>
+        <script src="my.js"></script>
+    </head>
+    <body>
+        <!-- Home -->
+        <div data-role="page" id="page1">
+            <div data-theme="b" data-role="header">
+                <h3>
+                    MicroAnalysis
+                </h3>
+                <div data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li>
+                            <a href="bacteria.html" data-theme="" data-icon="">
+								<img src="images/menu/bacteria.png" /><br/>
+                                Bacteria
+                            </a>
+                        </li>
+                        <li>
+                            <a href="specimen.html" data-theme="" data-icon="">
+								<img src="images/menu/specimen.png" /><br/>
+                                Specimen
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mixture.html" data-theme="" data-icon="">
+								<img src="images/menu/mixtures.png" /><br/>
+                                Mixture
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <h2>
+                    Bacteria found in Plants
+                </h2>
+            </div>
+            <div data-role="content">
+			
+				<div class="content-primary">	
+					<ul data-role="listview" data-filter="true" data-filter-placeholder="Search Bacteria...">
+						<li><a href="index.html">
+								<img src="images/bacteria/plantBac/agrobac.jpg" />
+								<h3>Agrobacterium Tumefaciens   </h3>						
+								<p>
+								The disease gains its name from the large tumour-like <br/>
+								swellings (galls) that typically occur at the crown of the plant, <br/>
+								just above soil level. Although it reduces the marketability  <br/>
+								of nursery stock, it usually does not cause serious damage to older plants.
+								</p>
+								 
+							</a>
+						</li>
+						<li><a href="index.html">
+								<img src="images/bacteria/plantBac/xantho.jpg" />
+								<h3>Xanthomonas Campestris  </h3>
+								<p>
+								Xanthomonas campestris is an aerobic, Gram-negative rod   <br/>
+								known to cause the black rot in crucifers by darkening the vascular tissues. <br/>
+								Campestris have been identified by their distinctive pathogenicity on  <br/>
+								a wide range of plants including crops and wild plants. 
+								</p>
+							</a>
+						</li>				
+					</ul>
+					<br/>
+					
+					<a href="bacteria.html" data-role="button">Back</a>
+				</div><!--/content-primary -->
+					
+            </div>
+            <div data-theme="b" data-role="footer" data-position="fixed">
+                <h1>
+                    ©copyright 2012-2013
+                </h1>
+            </div>
+        </div>
+        <script>
+            //App custom javascript
+        </script>
+    </body>
+</html>

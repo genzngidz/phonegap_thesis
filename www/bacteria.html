@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>
+        </title>
+        <link rel="stylesheet" href="jquery.mobile-1.1.1.min.css" />
+        <link rel="stylesheet" href="my.css" />
+        <style>
+            /* App custom styles */
+        </style>
+        <script src="jquery.min.js"></script>
+        <script src="jquery.mobile-1.1.1.min.js"></script>
+        <script src="my.js"></script>
+    </head>
+    <body>
+        <!-- Home -->
+        <div data-role="page" id="page1">
+            <div data-theme="b" data-role="header">
+                <h3>
+                    MicroAnalysis
+                </h3>
+                <div data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li>
+                            <a href="bacteria.html" data-theme="" data-icon="">
+								<img src="images/menu/bacteria.png" /><br/>
+                                Bacteria
+                            </a>
+                        </li>
+                        <li>
+                            <a href="specimen.html" data-theme="" data-icon="">
+								<img src="images/menu/specimen.png" /><br/>
+                                Specimen
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mixture.html" data-theme="" data-icon="">
+								<img src="images/menu/mixtures.png" /><br/>
+                                Mixture
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <h2>
+                    Bacteria
+                </h2>
+            </div>
+            <div data-role="content">
+			
+				<div class="content-primary">	
+					<ul data-role="listview" data-filter="true" data-filter-placeholder="Search Bacteria...">
+						<li><a data-transition="flip" href="bacteria_animals.html">
+								<img src="images/bacteria/menu/animals.png" />
+								<h3>Bacteria found in Animals</h3>						
+								<p>
+								Diseases brought about by bacteria’s <br/>
+								in the animals body have been rampantly spreading. <br/>
+								Here are examples of the bacteria <br/>
+								causing diseases and it’s description.
+								</p>
+								 
+								<span class="ui-li-count">5</span>
+							</a>
+						</li>
+						<li><a href="bacteria_humans.html">
+								<img src="images/bacteria/menu/human.png" />
+								<h3>Bacteria found in Humans</h3>
+								<p>
+								It is amazing to know that a disease<br/>
+								can spread with just physical contact.  <br/>
+								Minute they may seem but they do big things.<br/>
+								Discover the wonders of bacteria's affecting human now
+								</p>
+								<span class="ui-li-count">50</span>
+							</a>
+						</li>
+						<li><a href="bacteria_plants.html">
+								<img src="images/bacteria/menu/plant.png" />
+								<h3>Bacteria found in Plants</h3>
+								<p>
+								It is amazing to know that a disease<br/>
+								can spread with just physical contact.  <br/>
+								Minute they may seem but they do big things.<br/>
+								Discover the wonders of bacteria's affecting human now
+								</p>
+								<span class="ui-li-count">50</span>
+							</a>
+						</li>
+					</ul>
+				</div><!--/content-primary -->
+					
+            </div>
+            <div data-theme="b" data-role="footer" data-position="fixed">
+                <h1>
+                    ©copyright 2012-2013
+                </h1>
+            </div>
+        </div>
+        <script type="text/javascript" src="cordova-2.2.0.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+</html>

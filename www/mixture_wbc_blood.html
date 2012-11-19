@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>
+        </title>
+        <link rel="stylesheet" href="jquery.mobile-1.1.1.min.css" />
+        <link rel="stylesheet" href="my.css" />
+        <style>
+            /* App custom styles */
+        </style>
+        <script src="jquery.min.js"></script>
+        <script src="jquery.mobile-1.1.1.min.js"></script>
+        <script src="my.js"></script>
+    </head>
+    <body>
+        <!-- Home -->
+        <div data-role="page" id="page1">
+            <div data-theme="b" data-role="header">
+                <h3>
+                    <a href="about.html"> MicroAnalysis </a>
+                </h3>
+                <div data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li>
+                            <a data-transition="slidedown" href="bacteria.html" data-theme="" data-icon="">
+								<img src="images/menu/bacteria.png" /><br/>
+                                Bacteria
+                            </a>
+                        </li>
+                        <li>
+                            <a data-transition="slidedown" href="specimen.html" data-theme="" data-icon="">
+								<img src="images/menu/specimen.png" /><br/>
+                                Specimen
+                            </a>
+                        </li>
+                        <li>
+                            <a data-transition="slidedown" href="mixture.html" data-theme="" data-icon="">
+								<img src="images/menu/mixtures.png" /><br/>
+                                Mixture
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <h2>
+                    Mixture
+                </h2>
+            </div>
+            <div data-role="content">
+			
+				<div class="content-primary">	
+					<h2>Blood + WBC Diluting Fluid</h2>
+					<img src="images/mixture/wbc/bWBC.jpg" style="width:400px"/>
+					<p>
+						<strong>Details</strong>
+						<br/>
+						The white cell count (WBC) is the total number of leukocytes in a volume of blood, 
+						expressed as thousands/µl. As with the RBC, the WBC can be done by manual methods or 
+						by automated cell counters. The WBC by any method is a count of nuclei or total nucleated 
+						cell count. If nucleated red blood cells (nRBC) are circulating in blood, they will be included 
+						in the nucleated cell count whether the count is done by manual methods or by automated analyzers. 
+						In such cases, the WBC represents the leukocyte count only after it has been corrected for the 
+						nucleated red cells (nRBCs). The number of nRBCs per 100 leukocytes is recorded during the differential leukocyte count. 
+					</p>
+					
+					<br/>
+					
+					</br>
+					
+					<br/>
+					<br/>
+					<a href="mixture_wbc.html" data-role="button">Back</a>
+					
+					
+					
+				</div><!--/content-primary -->
+				
+            </div>
+            <div data-theme="b" data-role="footer" data-position="fixed">
+                <h1>
+                    ©copyright 2012-2013
+                </h1>
+            </div>
+        </div>
+          <script type="text/javascript" src="cordova-2.0.0.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+</html>

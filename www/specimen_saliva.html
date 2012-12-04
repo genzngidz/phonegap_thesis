@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>
+        </title>
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+        <link rel="stylesheet" href="my.css" />
+        <style>
+            /* App custom styles */
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
+        </script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.1.1/jquery.mobile-1.1.1.min.js">
+        </script>
+        <script src="my.js">
+        </script>
+    </head>
+    <body>
+        <!-- Home -->
+        <div data-role="page" id="page1">
+            <div data-theme="b" data-role="header">
+                <h3>
+                    Microscopic Analysis
+                </h3>
+                <div data-role="navbar" data-iconpos="top">
+				   <ul>
+                        <li>
+                            <a href="bacteria.html" data-theme="" data-icon="">
+								<img src="images/menu/bacteria.png" /><br/>
+                                Bacteria
+                            </a>
+                        </li>
+                        <li>
+                            <a href="specimen.html" data-theme="" data-icon="">
+								<img src="images/menu/specimen.png" /><br/>
+                                Specimen
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mixtures.html" data-theme="" data-icon="">
+								<img src="images/menu/mixtures.png" /><br/>
+                                Mixture
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <h2>
+                    Saliva
+                </h2>
+            </div>
+            <div data-role="content">
+			
+				<div class="content-primary">	
+					<ul data-role="listview" data-filter="true" data-filter-placeholder="Search Urine...">
+						<li><a href="specimen_saliva_parotid.html">
+								<img src="images/specimen/saliva/parotid.jpg" />
+								<h3>Parotid Gland </h3>						
+								<p>
+								A salivary gland in humans. It is one of a <br/>
+								pair, and the largest of the salivary glands.  
+								</p>								 
+							</a>
+						</li>
+						<li><a href="specimen_saliva_submand.html">
+								<img src="images/specimen/saliva/submand.jpg" />
+								<h3>Submandibular Glands </h3>						
+								<p>
+								A salivary glands located beneath the floor   <br/>
+								of the mouth.. In humans, they account for 70%  <br/>
+								of the salivary volume and weigh about 15 grams.
+								</p>								
+							</a>
+						</li>
+						<li><a href="specimen_saliva_subling.html">
+								<img src="images/specimen/saliva/subling.jpg" />
+								<h3>Sublingual Glands  </h3>
+								<p>
+								Salivary glands in the mouth. They lie anterior  <br/>
+								to the submandibular gland under the tongue,   <br/>
+								beneath the mucous membrane of the floor of the mouth.
+								</p>
+							</a>
+						</li>			
+					</ul>
+					<br/>
+					
+					<a href="specimen.html" data-role="button">Back</a>
+				</div><!--/content-primary -->
+					
+            </div>
+            <div data-theme="b" data-role="footer" data-position="fixed">
+                <h1>
+                    ©copyright 2012-2013
+                </h1>
+            </div>
+        </div>
+        <script type="text/javascript" src="cordova-2.2.0.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+</html>

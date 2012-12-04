@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+       <meta name="format-detection" content="telephone=no" />
+       <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        
+        <title>
+        </title>
+        <link rel="stylesheet" href="jquery.mobile-1.1.1.min.css" />
+        <link rel="stylesheet" href="my.css" />
+        <style>
+            /* App custom styles */
+        </style>
+        <script src="jquery.min.js"></script>
+        <script src="jquery.mobile-1.1.1.min.js"></script>
+        <script src="my.js"></script>
+    </head>
+    <body>
+        <!-- Home -->
+        <div data-role="page" id="page1">
+            <div data-theme="b" data-role="header">
+                <h3>
+                    Microscopic Analysis
+                </h3>
+                <div data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li>
+                            <a data-transition="fade" href="bacteria.html" data-theme="" data-icon="">
+								<img src="images/menu/bacteria.png" /><br/>
+                                Bacteria
+                            </a>
+                        </li>
+                        <li>
+                            <a data-transition="fade" href="specimen.html" data-theme="" data-icon="">
+								<img src="images/menu/specimen.png" /><br/>
+                                Specimen
+                            </a>
+                        </li>
+                        <li>
+                            <a data-transition="fade" href="mixture.html" data-theme="" data-icon="">
+								<img src="images/menu/mixtures.png" /><br/>
+                                Mixture
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <h2>
+                    Tissue
+                </h2>
+            </div>
+            <div data-role="content">
+			
+				<div class="content-primary">	
+					<h2>Nerve Tissue </h2>
+					<p>
+						<strong>Did you know that...</strong>
+						<br/> <br>
+						It is composed of specialized cells which not only receive stimuli but also conduct impulses to and from all parts of the body.  Nerve cells or neurons are long and string-like.
+					<br>
+					<img src="images/specimen/tissue/nerve.jpg" style="width:400px"/>
+					<br/>
+					<h2>Additional Information</h2>
+					<div class="ui-body ui-body-c ui-corner-all">
+			
+						<div data-role="collapsible-set" data-theme="b" data-content-theme="d">							
+							<div data-role="collapsible" data-theme="b" data-content-theme="c">
+							
+								<img src="images/specimen/tissue/nerve2.jpg" /> </br>
+								<h3>Read More...</h3>						
+										<p> 
+										<br><br><strong>three main types of neurons:</br></strong>									
+										<ul>
+										<li> <strong>Sensory (or afferent) Neurons</strong>, conduct impulses from the sensory organs to the central nervous system (brain and spinal cord) </li>
+										<li> <strong>Motor (or efferent) Neurons</strong>, conduct impulses from the central nervous system to the effector organs (such as muscles and glands)</li>
+										<li> <strong>. Interneurons </strong>, (also known as connector neurons or association neurons) are those that connect sensory neurons to motor neurons</li>										
+										</ul>
+							</div>
+							
+						
+					</div><!--END UI BODY ---->
+					<br/>
+					
+					
+					
+				</div><!--/content-primary -->
+				<a href="specimen_tissue.html" data-role="button">Back</a>
+            </div>
+            <div data-theme="b" data-role="footer" data-position="fixed">
+                <h1>
+                    ©copyright 2012-2013
+                </h1>
+            </div>
+        </div>
+        <script type="text/javascript" src="cordova-2.2.0.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+</html>

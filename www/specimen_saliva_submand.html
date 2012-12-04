@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+       <meta name="format-detection" content="telephone=no" />
+       <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        
+        <title>
+        </title>
+        <link rel="stylesheet" href="jquery.mobile-1.1.1.min.css" />
+        <link rel="stylesheet" href="my.css" />
+        <style>
+            /* App custom styles */
+        </style>
+        <script src="jquery.min.js"></script>
+        <script src="jquery.mobile-1.1.1.min.js"></script>
+        <script src="my.js"></script>
+    </head>
+    <body>
+        <!-- Home -->
+        <div data-role="page" id="page1">
+            <div data-theme="b" data-role="header">
+                <h3>
+                    Microscopic Analysis
+                </h3>
+                <div data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li>
+                            <a data-transition="fade" href="bacteria.html" data-theme="" data-icon="">
+								<img src="images/menu/bacteria.png" /><br/>
+                                Bacteria
+                            </a>
+                        </li>
+                        <li>
+                            <a data-transition="fade" href="specimen.html" data-theme="" data-icon="">
+								<img src="images/menu/specimen.png" /><br/>
+                                Specimen
+                            </a>
+                        </li>
+                        <li>
+                            <a data-transition="fade" href="mixture.html" data-theme="" data-icon="">
+								<img src="images/menu/mixtures.png" /><br/>
+                                Mixture
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <h2>
+                    Saliva
+                </h2>
+            </div>
+            <div data-role="content">
+			
+				<div class="content-primary">	
+					<h2>Submandibular Glands or (Submaxillary Glands)</h2>
+					<p>
+						<strong>Did you know that...</strong>
+						<br/> <br>
+						...are salivary glands located beneath the floor of the mouth. In humans, they account for 70% of the salivary volume and weigh about 15 grams. Unstimulated (at rest) in humans, the percentage contribution to whole saliva; ~25% Parotid, Submandibular and Sublingual ~ 67% and ~8% minor mucous glands. During stimulated secretion the parotid gland produces majority of the saliva.
+					<img src="images/specimen/saliva/submand.jpg" style="width:400px"/>
+					<br/>
+					<h2>Additional Information</h2>
+					<div class="ui-body ui-body-c ui-corner-all">
+			
+						<div data-role="collapsible-set" data-theme="b" data-content-theme="d">							
+							<div data-role="collapsible" data-theme="b" data-content-theme="c">
+							
+								<img src="images/specimen/saliva/parotid2.jpg" /> </br>
+								<h3>Read More...</h3>						
+									<p>The commonest problem is blockage of the salivary duct. This can be caused by the presence of stones or simply a narrowing of the salivary duct. Blockage of the salivary duct can cause a painful swelling of the gland when you eat. Sometimes the swelling may settle on its own. When the blockage is severe, it can lead to persistent inflammation of the gland. Occasionally, a painless lump may develop within the submandibular gland. Those lumps are often benign but need thorough checking, as up to half of them may be or become cancerous. Even benign lumps can get gradually bigger.
+									</p>										
+							</div>
+							
+						
+					</div><!--END UI BODY ---->
+					<br/>
+					
+					
+					
+				</div><!--/content-primary -->
+				<a href="specimen_saliva.html" data-role="button">Back</a>
+            </div>
+            <div data-theme="b" data-role="footer" data-position="fixed">
+                <h1>
+                    ©copyright 2012-2013
+                </h1>
+            </div>
+        </div>
+        <script type="text/javascript" src="cordova-2.2.0.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>
+        </title>
+        <link rel="stylesheet" href="jquery.mobile-1.1.1.min.css" />
+        <link rel="stylesheet" href="my.css" />
+        <style>
+            /* App custom styles */
+        </style>
+        <script src="jquery.min.js"></script>
+        <script src="jquery.mobile-1.1.1.min.js"></script>
+        <script src="my.js"></script>
+    </head>
+    <body>
+        <!-- Home -->
+        <div data-role="page" id="page1">
+            <div data-theme="b" data-role="header">
+                <h3>
+                    <a href="about.html"> Microscopic Analysis </a>
+                </h3>
+                <div data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li>
+                            <a data-transition="slidedown" href="bacteria.html" data-theme="" data-icon="">
+								<img src="images/menu/bacteria.png" /><br/>
+                                Bacteria
+                            </a>
+                        </li>
+                        <li>
+                            <a data-transition="slidedown" href="specimen.html" data-theme="" data-icon="">
+								<img src="images/menu/specimen.png" /><br/>
+                                Specimen
+                            </a>
+                        </li>
+                        <li>
+                            <a data-transition="slidedown" href="mixture.html" data-theme="" data-icon="">
+								<img src="images/menu/mixtures.png" /><br/>
+                                Mixture
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <h2>
+                    Bacteria
+                </h2>
+            </div>
+            <div data-role="content">
+			
+				<div class="content-primary">	
+					<h2>Aeromonas</h2>
+					<p>
+						<strong>Did you know that...</strong>
+						<br/>
+						IDENTITY 
+							Name: Ralstonia solanacearum (Smith) Yabuuchi et al. <br/>
+							Synonyms: Bacterium solanacearum (Smith) Chester;  
+							Burkholderia solanacearum (Smith) Yabuuchi et al. (1992);
+							Pseudomonas solanacearum (Smith) Smith; 
+							Taxonomic position: Bacteria: Gracilicutes <br/> 
+							Common names: Brown rot (potato), southern bacterial wilt (tomato);
+							Moko disease (banana), Granville wilt (tobacco) (English); 
+							Pourriture brune, Bactériose vasculaire (French); 
+							Braunfäule, Schleimkrankheit der Kartoffel (German); 
+							Podredumbre parda de la patata (Spanish) 
+							Notes on taxonomy and nomenclature: In a taxonomic study of certain non-fluorescent species of the genus Pseudomonas (Yabuuchi et al., 1992), the genus Burkholderia was proposed to encompass the variation found in this group and the name Burkholderia solanacearum was proposed. Subsequent study of this genus revealed that R. solanacearum was sufficiently distinct from other members of the genus to warrant assignment to the newly proposed genus Ralstonia (Yabuuchi et al., 1995). 
+					</p>
+					<img src="images/bacteria/plantBac/ralstonia.png" style="width:400px"/>
+					<br/>
+					<br>
+				
+					
+					</br>
+					<h2>Additional Information</h2>
+					<div class="ui-body ui-body-c ui-corner-all">
+			
+						<div data-role="collapsible-set" data-theme="b" data-content-theme="d">
+							
+							<div data-role="collapsible" data-theme="b" data-content-theme="c">
+								<h2>R. Solanacearum has an extremely wide host range</h2>
+								
+										<img src="images/bacteria/plantBac/ralstonia2.jpg" style="width:300px" />
+										<h3>Disease in Humans </h3>						
+										<p>
+										R. solanacearum as a species has an extremely wide host range, but different pathogenic varieties (races) within the species may show very limited host ranges. Within the EPPO region, the race which is now present and has potential for spread is race 3 (see below) with a limited host range, including in particular potatoes (Solanum tuberosum), tomatoes (Lycopersicon esculentum) and the weed Solanum dulcamara. Over 200 species, especially tropical and subtropical crops, are susceptible to one or other of the races of R. solanacearum. Worldwide, the most important are: tomatoes, Musa spp., tobacco (Nicotiana tabacum) and potatoes. Some minor host crops are: Anthurium spp., groundnuts (Arachis hypogaea), Capsicum annuum, cotton (Gossypium hirsutum), rubber (Hevea brasiliensis), cassava (Manihot esculenta), castor beans (Ricinus communis), aubergines (Solanum melongena) and ginger (Zingiber officinalis). Many weeds are also hosts of the pathogen and therefore increase the potential of R. solanacearum to build up inoculum. For extensive host lists, see Kelman (1953), Bradbury (1986), Persley (1986a), Hayward (1994a).
+										</p>
+										<br/>
+										
+							</div>						
+						</div>
+						
+					</div><!--END UI BODY ---->
+					<br/>
+					<br/>
+					<a href="bacteria_humans.html" data-role="button">Back</a>
+					
+					
+					
+				</div><!--/content-primary -->
+				
+            </div>
+            <div data-theme="b" data-role="footer" data-position="fixed">
+                <h1>
+                    ©copyright 2012-2013
+                </h1>
+            </div>
+        </div>
+         <script type="text/javascript" src="cordova-2.0.0.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+</html>

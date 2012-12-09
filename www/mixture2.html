@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+       <meta name="format-detection" content="telephone=no" />
+       <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        
+        <title>
+        </title>
+        <link rel="stylesheet" href="css\smoothness\jquery-ui-1.9.2.custom.min.css" />
+        <link rel="stylesheet" href="jquery.mobile-1.1.1.min.css" />
+        <link rel="stylesheet" href="my.css" />
+        <style>
+            /* App custom styles */
+        </style>
+		
+        <script src="jquery.min.js"></script>
+        <script src="jquery.mobile-1.1.1.min.js"></script>
+		
+        
+        <script src="my.js"></script>
+		<script src="jquery-1.8.3.js"></script>
+        <script src="jquery-ui-1.9.2.custom.min.js"></script>
+        <script src="jquery.ui.touch-punch.min.js"></script>
+		
+		<script>
+		$(function() {
+			$( ".mixture-menu img" ).draggable({ revert: "valid" });
+	 
+			$( "body" ).droppable();
+			$( ".mixture-mixingpad" ).droppable({
+				activeClass: "mixture-highlighted",
+				hoverClass: "ui-state-active",
+				drop: function( event, ui ) {http://localhost/phonegap/www/images/menu/bacteria.png
+					
+					$( this )
+						.addClass( ".mixture-drop" )
+						.find( "p" )
+							.append( "<div><img id='"+ui.draggable.attr('id')+"' src='"+ui.draggable.attr('src')+"'></img>" + ui.draggable.attr('id')+" <a href='javascript:void(0)' class='mixture-remove'>remove</a></div>" );
+					$('.mixture-remove').click(function(){
+						$(this).parent().remove();
+						link = "";
+						$( ".mixture-mixingpad p div img" ).each(function(){
+							link = link + $(this).attr('id')+"_";
+						});
+						$('#mixture-link').attr('href',link+".html");
+					})
+					
+					link = "";
+					$( ".mixture-mixingpad p div img" ).each(function(){
+						link = link + $(this).attr('id')+"_";
+					});
+					$('#mixture-link').attr('href',link+".html");
+				}
+			});
+		});
+		</script>
+		
+		<style>
+				.mixture-content{
+					border:1px solid #ccc;
+				}	
+				.mixture-menu{
+					width:20%;
+					border:1px solid #333;
+					min-height:300px;
+					float:left;
+				}
+				.mixture-menu img{
+					width:100%;
+				}
+				.mixture-mixingpad{
+					min-height:350px;
+					border:1px solid #36f;
+					margin-left:21%;
+					border-radius:10px;
+					padding:10px;
+				}
+				.mixture-mixingpad p >div{
+					float:left;
+				}
+				
+				.mixture-footer	{
+					clear:both;
+				}
+				.mixture-highlighted{
+					background:#ccc;
+				}
+		</style>
+    </head>
+    <body>
+        <!-- Home -->
+        <div data-role="page" id="page1">
+            <div data-theme="b" data-role="header">
+                <h3>
+                    <a href="about.html"> Microscopic Analysis </a>
+                </h3>
+                <div data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li>
+                            <a data-transition="fade" href="bacteria.html" data-theme="" data-icon="">
+								<img src="images/menu/bacteria.png" /><br/>
+                                Bacteria
+                            </a>
+                        </li>
+                        <li>
+                            <a data-transition="fade" href="specimen.html" data-theme="" data-icon="">
+								<img src="images/menu/specimen.png" /><br/>
+                                Specimen
+                            </a>
+                        </li>
+                        <li>
+                            <a data-transition="fade" href="mixture.html" data-theme="" data-icon="">
+								<img src="images/menu/mixtures.png" /><br/>
+                                Mixture
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <h2>
+                    Mixture
+                </h2>
+            </div>
+            <div data-role="content">
+				
+				
+				
+				<div class="content-primary">	
+					<div class="mixture-content">
+							<div class="mixture-menu">
+								<img src="images/menu/bacteria.png" id="mx-1"/>
+								<img src="images/menu/bacteria.png" id="mx-2"/>
+								<img src="images/menu/bacteria.png" id="mx-3"/>
+								<img src="images/menu/bacteria.png" id="mx-4"/>
+							</div>
+							<div class="mixture-mixingpad">
+								<p>Drop Zone<br/></p>
+								<br style="clear:both"/>
+								<a data-theme="b" data-role="button" href="errorpage.html" id="mixture-link">Show Mixture</a>
+							</div>
+							<div class="mixture-footer"></div>
+					</div>
+				</div><!--/content-primary -->
+					
+            </div>
+            <div data-theme="b" data-role="footer" data-position="fixed">
+                <h1>
+                    ©copyright 2012-2013
+                </h1>
+            </div>
+        </div>
+        <script type="text/javascript" src="cordova-2.2.0.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+</html>

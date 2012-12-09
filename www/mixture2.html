@@ -32,12 +32,11 @@
 				activeClass: "mixture-highlighted",
 				hoverClass: "ui-state-active",
 				drop: function( event, ui ) {http://localhost/phonegap/www/images/menu/bacteria.png
-					//" + ui.draggable.attr('id')+" 
+					
 					$( this )
 						.addClass( ".mixture-drop" )
 						.find( "p" )
-							.append( "<div><img id='"+ui.draggable.attr('id')+"' src='"+ui.draggable.attr('src')+"'></img><a href='javascript:void(0)' class='mixture-remove'>X</a></div>" );
-							
+							.append( "<div><img id='"+ui.draggable.attr('id')+"' src='"+ui.draggable.attr('src')+"'></img>" + ui.draggable.attr('id')+" <a href='javascript:void(0)' class='mixture-remove'>remove</a></div>" );
 					$('.mixture-remove').click(function(){
 						$(this).parent().remove();
 						link = "";
@@ -45,7 +44,7 @@
 							link = link + $(this).attr('id')+"_";
 						});
 						$('#mixture-link').attr('href',link+".html");
-					});
+					})
 					
 					link = "";
 					$( ".mixture-mixingpad p div img" ).each(function(){
@@ -79,35 +78,13 @@
 				}
 				.mixture-mixingpad p >div{
 					float:left;
-					position:relative;
 				}
-				
-				.mixture-mixingpad p > div:hover .mixture-remove {
-				display:block;
-				}
-				.mixture-mixingpad p > div img{
-					width:100%;
-				}
-				
 				
 				.mixture-footer	{
 					clear:both;
 				}
 				.mixture-highlighted{
 					background:#ccc;
-				}
-				
-				.mixture-remove{
-					text-decoration:none;
-					color:#ff0000;
-					border:1px solid #333;
-					background:#ccc;
-					border-radius:5px;
-					padding:5px;
-					position:absolute;
-					top:0;
-					right:0;
-					display:none;
 				}
 		</style>
     </head>
@@ -151,12 +128,10 @@
 				<div class="content-primary">	
 					<div class="mixture-content">
 							<div class="mixture-menu">
-								<img src="images/menu/bacteria.png" id="blood_1"/>
-								<img src="images/menu/specimen.png" id="blood_2"/>
-								<img src="images/menu/specimen.png" id="blood_3"/>
-								<img src="images/menu/bacteria.png" id="urine_1"/>
-								<img src="images/menu/bacteria.png" id="urine_2"/>
-								<img src="images/bacteria/Bacteria/Dogs_Leptospira.jpg" id="urine_3"/>
+								<img src="images/menu/bacteria.png" id="mx-1"/>
+								<img src="images/menu/bacteria.png" id="mx-2"/>
+								<img src="images/menu/bacteria.png" id="mx-3"/>
+								<img src="images/menu/bacteria.png" id="mx-4"/>
 							</div>
 							<div class="mixture-mixingpad">
 								<p>Drop Zone<br/></p>

@@ -12,53 +12,6 @@
         <link rel="stylesheet" href="jquery.mobile-1.1.1.min.css" />
         <link rel="stylesheet" href="my.css" />
         <style>
-            /* App custom styles */
-        </style>
-
-        <script src="jquery.min.js"></script>
-        <script src="jquery.mobile-1.1.1.min.js"></script>
-
-        
-        <script src="my.js"></script>
-		<script src="jquery-1.8.3.js"></script>
-        <script src="jquery-ui-1.9.2.custom.min.js"></script>
-        <script src="jquery.ui.touch-punch.min.js"></script>
-
-		<script>
-		$(function() {
-			$( ".mixture-menu img" ).draggable({ revert: "valid" });
-
-			$( "body" ).droppable();
-			$( ".mixture-mixingpad" ).droppable({
-				activeClass: "mixture-highlighted",
-				hoverClass: "ui-state-active",
-				drop: function( event, ui ) {http://localhost/phonegap/www/images/menu/bacteria.png
-					//" + ui.draggable.attr('id')+" 
-					$( this )
-						.addClass( ".mixture-drop" )
-						.find( "p" )
-							.append( "<div><img id='"+ui.draggable.attr('id')+"' src='"+ui.draggable.attr('src')+"'></img><a href='javascript:void(0)' class='mixture-remove'>X</a></div>" );
-
-					$('.mixture-remove').click(function(){
-						$(this).parent().remove();
-						link = "";
-						$( ".mixture-mixingpad p div img" ).each(function(){
-							link = link + $(this).attr('id')+"_";
-						});
-						$('#mixture-link').attr('href',link+".html");
-					});
-
-					link = "";
-					$( ".mixture-mixingpad p div img" ).each(function(){
-						link = link + $(this).attr('id')+"_";
-					});
-					$('#mixture-link').attr('href',link+".html");
-				}
-			});
-		});
-		</script>
-
-		<style type="text/css">
 				.mixture-content{
 					border:1px solid #ccc;
 				}	
@@ -111,7 +64,52 @@
 					display:none;
 				}
 		</style>
-    </head>
+    
+
+        <script src="jquery.min.js"></script>
+        <script src="jquery.mobile-1.1.1.min.js"></script>
+
+        
+        <script src="my.js"></script>
+		<script src="jquery-1.8.3.js"></script>
+        <script src="jquery-ui-1.9.2.custom.min.js"></script>
+        <script src="jquery.ui.touch-punch.min.js"></script>
+
+		<script>
+		$(function() {
+			$( ".mixture-menu img" ).draggable({ revert: "valid" });
+
+			$( "body" ).droppable();
+			$( ".mixture-mixingpad" ).droppable({
+				activeClass: "mixture-highlighted",
+				hoverClass: "ui-state-active",
+				drop: function( event, ui ) {http://localhost/phonegap/www/images/menu/bacteria.png
+					//" + ui.draggable.attr('id')+" 
+					$( this )
+						.addClass( ".mixture-drop" )
+						.find( "p" )
+							.append( "<div><img id='"+ui.draggable.attr('id')+"' src='"+ui.draggable.attr('src')+"'></img><a href='javascript:void(0)' class='mixture-remove'>X</a></div>" );
+
+					$('.mixture-remove').click(function(){
+						$(this).parent().remove();
+						link = "";
+						$( ".mixture-mixingpad p div img" ).each(function(){
+							link = link + $(this).attr('id')+"_";
+						});
+						$('#mixture-link').attr('href',link+".html");
+					});
+
+					link = "";
+					$( ".mixture-mixingpad p div img" ).each(function(){
+						link = link + $(this).attr('id')+"_";
+					});
+					$('#mixture-link').attr('href',link+".html");
+				}
+			});
+		});
+		</script>
+
+		</head>
     <body>
         <!-- Home -->
         <div data-role="page" id="page1">
